@@ -1,126 +1,166 @@
+/* Google font imports */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
-  --black: #171321;
-  --soft-orange: hsl(35, 77%, 62%);
-  --soft-brown: #885a2d;
-  --off-white: #efefef;
-  --light-beige: #fbf2c0;
-  --dark-brownish: #b08968;
-  --beige: #eee1d5;
-  --brown: #43281c;
+--black: #171321;
+--soft-orange: hsl(35, 77%, 62%);
+--soft-brown: #885a2d;
+--off-white: #efefef;
+--light-beige: #fbf2c0;
+--dark-brownish: #b08968;
+--beige: #eee1d5;
+--brown: #43281c;
+--font-size: 15px;
+--mono: 'Inter', monospace;
+--sans: 'Open Sans', sans-serif;
 }
 
 html {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
 body {
-  background-color: var(--light-beige);
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  color: var(--black);
+background-color: var(--brown);
+font-family: var(--sans);
+margin: 0;
+padding: 0;
+color: var(--soft-brown);
 }
 
+/* header and navbar */
+
 header {
-  background-color: var(--brown);
-  padding: 15px 0;
+background-color: var(--beige);
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
 }
 
 nav img {
-  width: 40px;
-  margin-right: 10px;
+width: 50px;
 }
 
 nav span {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--off-white);
+font-weight: 700;
+font-size: 24px;
 }
+
+/* main */
 
 main {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: var(--off-white);
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+max-width: 800px;
+margin: 0 auto;
+padding: 40px;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 20px;
+/* order summary */
+
+.items {
+background-color: var(--beige);
+border-radius: 6px;
+padding: 30px;
+margin-bottom: 30px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
+.items h2 {
+margin-bottom: 20px;
 }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  font-size: 16px;
-  padding: 5px 0;
+.items ul {
+list-style-type: none;
+padding: 0;
 }
 
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: 1px solid var(--soft-brown);
+.items li {
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
 }
 
-label {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 5px;
+/* customer information */
+
+.customer-info {
+background-color: var(--beige);
+border-radius: 6px;
+padding: 30px;
 }
 
-form div {
-  margin-bottom: 20px;
+.customer-info h2 {
+margin-bottom: 20px;
 }
 
-table {
-  width: 100%;
-  margin-bottom: 20px;
+.customer-info form div {
+margin-bottom: 15px;
 }
 
-td {
-  text-align: right;
+.customer-info label {
+display: block;
+margin-bottom: 5px;
 }
 
-td:first-child {
-  text-align: left;
+.customer-info input {
+width: 100%;
+padding: 8px;
+border: 1px solid var(--soft-brown);
+border-radius: 4px;
 }
+
+/* order total */
+
+.order-total {
+background-color: var(--beige);
+border-radius: 6px;
+padding: 30px;
+}
+
+.order-total h2 {
+margin-bottom: 20px;
+}
+
+.order-total table {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.order-total td {
+text-align: right;
+padding-bottom: 10px;
+}
+
+.order-total tr:first-child td {
+font-weight: bold;
+}
+
+/* button box */
 
 .btn-box {
-  text-align: center;
+display: flex;
+justify-content: center;
 }
 
-button {
-  background-color: var(--brown);
-  color: var(--off-white);
-  font-size: 18px;
-  padding: 10px 30px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.btn-box button {
+padding: 10px 20px;
+background-color: var(--soft-orange);
+border: none;
+border-radius: 4px;
+color: var(--off-white);
+font-weight: bold;
+cursor: pointer;
+text-transform: uppercase;
 }
 
-button:hover {
-  background-color: var(--soft-brown);
+@media screen and (max-width: 600px) {
+nav {
+flex-direction: column;
+}
+
+nav img {
+margin-bottom: 10px;
+}
 }
 
