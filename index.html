@@ -5,73 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Checkout Page</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src=".\images\coffee_masters_logo.png" alt="Coffee Masters Logo">
-                <h1>Coffee Masters</h1>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <img src="./assets/images/coffee_masters_logo.png" alt="coffee_masters_logo">
+        Coffee Masters
+    </nav>
+    <div class="checkout-box">
 
-    <main>
-        <section class="items">
-            <h2>ITEMS</h2>
-            <div class="item">
-                <div class="quantity">1x</div>
-                <div class="name">Cappuccino</div>
-                <div class="price">$6.00</div>
-                <div class="notes">Light Foam</div>
+        <section class="items beige-box grid-box_1">
+            <p>ITEMS</p>
+            <div class="order-type">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Cappuccino</li>
+                        <li class="beige_color">Light Foam</li>
+                    </ul>
+                </div>
+                <p>$6.00</p>
             </div>
-            <div class="item">
-                <div class="quantity">1x</div>
-                <div class="name">Cappuccino</div>
-                <div class="price">$7.90</div>
-                <div class="notes">Almond Milk, Double Espresso Shot</div>
+
+            <div class="order-type">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Cappuccino</li>
+                        <li class="beige_color">Almond Milk</li>
+                        <li class="beige_color">Double Espresso Shot</li>
+                    </ul>
+                </div>
+                <p>$7. 90</p>
             </div>
-            <div class="item">
-                <div class="quantity">1x</div>
-                <div class="name">Croissant</div>
-                <div class="price">$5.37</div>
-                <div class="notes">Butter</div>
+
+            <div class="order-type">
+                <div class="item">
+                    <p>1x</p>
+                    <ul>
+                        <li>Croissant</li>
+                        <li class="beige_color">Butter</li>
+                    </ul>
+                </div>
+                <p>$5.37</p>
             </div>
         </section>
 
-        <section class="name">
-            <h2>NAME</h2>
-            <div class="form-group">
-                <label for="name-input" class="input-label">Name for Order</label>
-                <input type="text" id="name-input" class="text-input">
+        <section class="input-name beige-box grid-box_2">
+            <p>NAME</p>
+            <div class="name-group">
+                <label for="example" class="input-label">Name for order</label>
+                <input id="example" class="example-input" placeholder="Poor Batsy" />
             </div>
         </section>
+        <section class="input-card beige-box grid-box_3">
+            <p>PAYMENT</p>
+            <div class="name-group">
+                <label for="example" class="input-label">Name for order</label>
+                <input id="example" class="example-input" placeholder="0000-0000-broke-0000" />
+            </div>
+            <div class="name-group">
+                <label for="example" class="input-label">Name for order</label>
+                <input id="example" class="example-input" placeholder="111" />
+            </div>
+        </section>
+        <section class="place-order grid-box_4">
+            <div class="subtotal-type">
+                <div>
+                    <p>Subtotal</p>
+                    <p>Tax</p>
+                    <p>Total</p>
+                </div>
+                <div>
+                    <p>$19.27</p>
+                    <p>$0.96</p>
+                    <p>$20.23</p>
+                </div>
+            </div>
 
-        <section class="payment">
-            <h2>PAYMENT</h2>
-            <div class="form-group">
-                <label for="card-input" class="input-label">Card Number</label>
-                <input type="text" id="card-input" class="text-input">
+            <div class="btn-box">
+                <button type="button">Place Order</button>
             </div>
-            <div class="form-group">
-                <label for="ccv-input" class="input-label">CCV Number</label>
-                <input type="text" id="ccv-input" class="text-input">
-            </div>
-        </section>
 
-        <section class="total">
-            <div class="subtotal">Subtotal: $19.27</div>
-            <div class="tax">Tax: $0.96</div>
-            <div class="grand-total">Total: $20.23</div>
-            <button class="place-order-btn">Place Order</button>
         </section>
-    </main>
+    </div>
+
 
 </body>
 
 </html>
-
