@@ -1,0 +1,155 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    background-color: #eee1d5;
+  }
+  
+  /* Navbar styles */
+  nav {
+    background-color: #43281c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    color: #ccc7ab;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  
+  /* Items styles */
+  .items {
+    background-color: #eee1d5;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .item .quantity {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .item .name {
+    margin-right: auto;
+  }
+  
+  .item .notes {
+    font-style: italic;
+    color: #885a2d;
+  }
+  
+  /* Name styles */
+  .name {
+    background-color: #eee1d5;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* Payment styles */
+  .payment {
+    background-color: #eee1d5;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* Total styles */
+  .total {
+    background-color: #eee1d5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .subtotal,
+  .tax,
+  .grand-total {
+    margin-bottom: 10px;
+  }
+  
+  .place-order-btn {
+    background-color: #885a2d;
+    color: #fbf2c0;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .place-order-btn:hover {
+    cursor: pointer;
+    background-color: #43281c;
+  }
+  
+  /* Form styles */
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .text-input {
+    border: 2px solid #885a2d;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .input-label {
+    background-color: #f6f2dd;
+    color: #885a2d;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    padding: 0 5px;
+  }
+  
+  /* Grid styles */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 20px;
+  }
+  
+  .items {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 3;
+  }
+  
+  .name {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+  }
+  
+  .payment {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+  }
+  
+  .total {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+  }  

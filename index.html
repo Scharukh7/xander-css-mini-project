@@ -5,46 +5,73 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Checkout Page</title>
 </head>
 
 <body>
-    Coffee Masters
+    <header>
+        <nav>
+            <div class="logo">
+                <img src=".\images\coffee_masters_logo.png" alt="Coffee Masters Logo">
+                <h1>Coffee Masters</h1>
+            </div>
+        </nav>
+    </header>
 
-    ITEMS
+    <main>
+        <section class="items">
+            <h2>ITEMS</h2>
+            <div class="item">
+                <div class="quantity">1x</div>
+                <div class="name">Cappuccino</div>
+                <div class="price">$6.00</div>
+                <div class="notes">Light Foam</div>
+            </div>
+            <div class="item">
+                <div class="quantity">1x</div>
+                <div class="name">Cappuccino</div>
+                <div class="price">$7.90</div>
+                <div class="notes">Almond Milk, Double Espresso Shot</div>
+            </div>
+            <div class="item">
+                <div class="quantity">1x</div>
+                <div class="name">Croissant</div>
+                <div class="price">$5.37</div>
+                <div class="notes">Butter</div>
+            </div>
+        </section>
 
-    1x
-    Cappuccino
-    $6.00
-    Light Foam
+        <section class="name">
+            <h2>NAME</h2>
+            <div class="form-group">
+                <label for="name-input" class="input-label">Name for Order</label>
+                <input type="text" id="name-input" class="text-input">
+            </div>
+        </section>
 
-    1xCappuccino
-    $7. 90
-    Almond Milk
-    Double Espresso Shot
+        <section class="payment">
+            <h2>PAYMENT</h2>
+            <div class="form-group">
+                <label for="card-input" class="input-label">Card Number</label>
+                <input type="text" id="card-input" class="text-input">
+            </div>
+            <div class="form-group">
+                <label for="ccv-input" class="input-label">CCV Number</label>
+                <input type="text" id="ccv-input" class="text-input">
+            </div>
+        </section>
 
-    1x
-    Croissant
-    $5.37
-    Butter
+        <section class="total">
+            <div class="subtotal">Subtotal: $19.27</div>
+            <div class="tax">Tax: $0.96</div>
+            <div class="grand-total">Total: $20.23</div>
+            <button class="place-order-btn">Place Order</button>
+        </section>
+    </main>
 
-    NAME
-    Name for order
-
-    PAYMENT
-    Card Number
-    CCV Number
-
-    Subtotal
-    $19.27
-
-    Tax
-    $0.96
-
-    Total
-    $20.23
-
-    Place Order
 </body>
 
 </html>
+
